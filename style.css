@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:2rem auto ;
+}
+
+.logo img{
+    width: 40px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    
+}
+
+
+ a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, .menu-icon:hover {
+    color: rgba(138, 8, 8, 0.705);
+}
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.description {
+    margin: 1rem;
+    font-size: 1.25rem;
+    max-width: 500px;
+}
+
+.products a {
+    margin: 1rem;
+    color: black;
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 20px;
+}
+
+.products, .smallPhoto {
+    transition: 0.5s;
+}
+.smallPhoto:hover {
+    transform: scale(1.2);
+}
+
+.iphone {
+    width: 200px;
+    height: auto;
+    margin-right: 9rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+.smallPhoto {
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 641px) {
+    ul {
+        flex-direction: column;
+        border: solid 1px white;
+        display: none;
+    }
+    ul li {
+        border-bottom: 1px solid black;
+        padding: 0.5rem;
+        text-align: center;
+        width: 200px;
+    }
+   
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+    }
+    .content {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1123px) and (min-width:641px) {
+    .iphone {
+        margin-right: 3rem;
+    }
+}

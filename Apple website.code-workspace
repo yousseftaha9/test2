@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../apple images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Apple website"
+	}
+}
